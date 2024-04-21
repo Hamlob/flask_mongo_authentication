@@ -50,5 +50,5 @@ def welcome():
     return redirect(url_for('login'))
 
 if __name__ == '__main__':
-    app.secret_key = 'your_secret_key'
+    app.secret_key = config.SECRET_KEY
     app.run(debug=True)
